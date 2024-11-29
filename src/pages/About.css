@@ -1,0 +1,63 @@
+.about-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  color: #333; /* Set text color to dark gray for better visibility */
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.mission,
+.vision,
+.story,
+.future-goals {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #2b3452; /* Set header color */
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.6;
+  color: #333; /* Ensure paragraph text is dark for visibility */
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+  padding: 0; /* Remove default padding */
+  margin-left: 0; /* Reset left margin */
+}
+
+ul li {
+  position: relative; /* Positioning for custom bullets */
+  padding-left: 20px; /* Space for custom bullets */
+  color: #333; /* Ensure text color is dark for visibility */
+}
+
+ul li::before {
+  content: '•'; /* Custom bullet */
+  color: #2b3452; /* Color for the bullets */
+  position: absolute; /* Position the bullet */
+  left: 0; /* Align bullet to the left */
+}
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+  .about-section {
+    grid-template-columns: 1fr 1fr;
+  }
+} 

@@ -1,0 +1,34 @@
+.courses-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #fff; /* Text color */
+  }
+  
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+  }
+  
+  .course-card {
+    background: rgba(0, 0, 0, 0.7); /* Background with slight transparency */
+    border-radius: 8px;
+    overflow: hidden; /* Ensures the image does not overflow */
+    transition: transform 0.3s; /* Animation effect */
+  }
+  
+  .course-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+  .course-thumbnail {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .course-card h2 {
+    text-align: center;
+    padding: 10px;
+    color: #bc4123; /* Your primary color */
+  }
