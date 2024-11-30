@@ -31,7 +31,7 @@ function Contact() {
 
   return (
     <div className="contact-container">
-     { /* <h1>Contact Us</h1>*/}
+      <h1>Contact Us</h1>
       {submitted ? (
         <p className="thank-you-message">Thanks for reaching out! Your message has been received.</p>
       ) : (
